@@ -1,8 +1,23 @@
 :root {
-    --primary-color: #1b1c1c;
-    --secondary-color: #232323;
-    --third-color: #000000;
-    --primary-color-text: #d5d7dd;
+    /* Primary Colors */
+    --primary-color: #000000;    /* Dark blueish-gray */
+    --secondary-color: #2D3A54;  /* Lighter blue-gray */
+
+    /* Accent Color */
+    --accent-color: #FF7F50;     /* Coral-orange */
+
+    /* Background */
+    --background-color: #F0F0F0; /* Light gray */
+
+    /* Text Colors */
+    --text-color: #333333;       /* Dark gray for text */
+    --link-color: #007BFF;       /* Blue for links */
+
+    /* Borders */
+    --border-color: #DDDDDD;     /* Light gray for borders */
+
+    /* Shadows */
+    --shadow-color: rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
 #movies {
@@ -21,9 +36,13 @@
 }
 .movie img {}
 
+.movie-title {
+    color: var(--primary-color);
+}
 .title {
     color: red;
     font-size: 2rem;
+
 }
 movie-description {
     padding-left: 1rem;
