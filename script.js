@@ -1,10 +1,11 @@
 const moviesDiv = document.querySelector('#movies');
-fetch("http://www.omdbapi.com/?s=get+out&apikey=6cf42fd4&")
+fetch("http://www.omdbapi.com/?t=get+out&apikey=6cf42fd4&")
     .then(response => {
     if (!response.ok) {
         throw new Error("No response returned");
     }
     else {
+        console.log(response)
         return response.json();
     }
     })
@@ -23,13 +24,11 @@ fetch("http://www.omdbapi.com/?s=get+out&apikey=6cf42fd4&")
             movies.classList.add("movie");
             moviesDiv.appendChild(movies);
             movies.innerHTML = `
-                <div class="poster-container" style="width: 50%;">
-                    <img src="${movie.Poster}" class="poster" style="max-width: 100%">
-                </div>
+                <img src="${movie.Poster}" class="poster" style="max-width: 100%">
                 <div class="movie-description">
                     <p class="movie-title"> <b class="title">` + movie.Title + `</b> (`+ movie.Year + `)</p>
                     
-                    <p ></p>
+                    <p></p>
                 </div>`
 
                 

@@ -1,7 +1,7 @@
 :root {
-    --primary-color: #242632;
-    --secondary-color: #56596c;
-    --third-color: #9a9daf;
+    --primary-color: #1b1c1c;
+    --secondary-color: #232323;
+    --third-color: #000000;
     --primary-color-text: #d5d7dd;
 }
 
@@ -11,12 +11,20 @@
     grid-template-rows: repeat(5, 1fr);
 }
 .movie {
+    width: auto;
     display: flex;
     flex-direction: row;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: var(--third-color);
+    margin-bottom: 1rem;
 }
 .movie img {}
 
 .title {
     color: red;
     font-size: 2rem;
+}
+movie-description {
+    padding-left: 1rem;
 }
