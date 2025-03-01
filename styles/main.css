@@ -1,28 +1,59 @@
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans:300,400,700);
+
 :root {
+    --primary-color: #242632;
+    --secondary-color: #56596c;
+    --third-color: #9a9daf;
+    --primary-color-text: #d5d7dd;
 
 }
-
-
 body {
     display: flex;
     flex-direction: column;
     margin: 0;
     height: 100vh;
+    font-family: "Noto Sans", sans-serif;
 }
+
 header {
+    display: flex;
+    align-items: center;
     width: 100%;
-    height: 400px;
+    height: 20%;
+    min-height: 100px;
+    background-color: var(--primary-color);
+    color: var(--primary-color-text);
 }
-main {
+#search {
+    height: 50%;
+    width: 100%; /* Or any other value you want */
+    margin: 10%;
     flex: 1;
+    background-color: var(--secondary-color);
+    border: none;
+    border-radius: calc(50vh / 2);
+    padding-left: 1.5%;
+}
+#search::placeholder {
+    color: var(--primary-color-text);
+    font-family: 'Noto Sans', sans-serif;
+}
+
+#title {
+    margin: 5%;
+}
+
+main {
+    flex-grow: 1;
     display: flex;
     flex-direction: row;
 
 }
 aside {
     width: 20%;
+    background-color: var(--secondary-color);
 }
 article {
-    flex: 1;
-    overflow: scroll;
+    padding: 1rem;
+    background-color: var(--third-color);
 }

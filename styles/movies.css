@@ -1,5 +1,26 @@
+:root {
+    --primary-color: #242632;
+    --secondary-color: #56596c;
+    --third-color: #9a9daf;
+    --primary-color-text: #d5d7dd;
+
+}
+
 #movies {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
+}
+
+.movie {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 1rem;
+    background-color: #131317;
+
+}
+.poster {
+    -webkit-mask-image: -webkit-linear-gradient(0deg, #000000, rgba(0, 0, 0, 0));
+    width: 100%;
 }
