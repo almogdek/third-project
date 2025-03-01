@@ -54,6 +54,7 @@ aside {
     background-color: var(--secondary-color);
 }
 article {
+    flex: 1;
     padding: 1rem;
     background-color: var(--third-color);
 }

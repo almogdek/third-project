@@ -3,24 +3,20 @@
     --secondary-color: #56596c;
     --third-color: #9a9daf;
     --primary-color-text: #d5d7dd;
-
 }
 
 #movies {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
 }
-
 .movie {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    border-radius: 1rem;
-    background-color: #131317;
-
 }
-.poster {
-    -webkit-mask-image: -webkit-linear-gradient(0deg, #000000, rgba(0, 0, 0, 0));
-    width: 100%;
+.movie img {}
+
+.title {
+    color: red;
+    font-size: 2rem;
 }
