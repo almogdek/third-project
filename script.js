@@ -23,8 +23,8 @@ fetch("http://www.omdbapi.com/?s=get+out&apikey=6cf42fd4")
             movies.classList.add("movie");
             moviesDiv.appendChild(movies);
             movies.innerHTML = `
-                <div class="poster" style="width: 25%;">
-                    <img src="${movie.Poster}">
+                <div class="poster" style="width: 50%;">
+                    <img src="${movie.Poster}" style="max-width: 100%">
                 </div>`
 
                 
